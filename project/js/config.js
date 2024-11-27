@@ -43,3 +43,18 @@ const BINARY_SEARCH_TREE_CONFIG = {
 };
 
 CONFIG.BINARY_SEARCH_TREE_CONFIG = BINARY_SEARCH_TREE_CONFIG;
+
+/*
+1. CONFIG:
+    CHART_COLORS: Màu sắc cho các trạng thái và biểu đồ (tốt, cảnh báo, nguy hiểm, chính, phụ, thành công, thông tin).
+    TREE_TYPES: Danh sách các loại cây (Cây Cảnh, Cây Ăn Trái, Cây Bóng Mát).
+    TREE_STATUS: Các trạng thái cây ("Tốt", "Cần Chăm Sóc").
+    API_ENDPOINT: Điểm cuối API để lấy dữ liệu.
+    CHART_OPTIONS: Cấu hình cho biểu đồ (đáp ứng, hoạt hình, chú giải).
+
+2. BINARY_SEARCH_TREE_CONFIG:
+    allowDuplicates: Cho phép hoặc không cho phép giá trị trùng lặp trong cây.
+    traversalOrder: Định nghĩa thứ tự duyệt cây (inOrder, preOrder, postOrder).
+    balanceTree: Tự động cân bằng cây nhị phân.
+    nodeColors: Màu sắc của các nút trong cây (mặc định và nổi bật). 
+*/

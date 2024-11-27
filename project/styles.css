@@ -1,35 +1,44 @@
 .nav-buttons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .card {
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .search-container {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .table {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .section {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .bi {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
+
+/*
+1.  .nav-buttons: Sử dụng Flexbox để căn chỉnh các nút, tạo khoảng cách đều đặn và thêm khoảng cách phía dưới.
+2.  .card: Các thẻ card có padding, bóng đổ nhẹ và khoảng cách dưới.
+3.  .search-container: Container tìm kiếm có nền sáng, padding, và bo góc nhẹ.
+4.  .table: Bảng có nền trắng và bóng đổ nhẹ.
+5.  .section: Các phần nội dung có nền trắng, padding, bo góc, và bóng đổ nhẹ.
+6.  .bi: Các biểu tượng có kích thước chữ lớn và khoảng cách dưới.
+*/

@@ -166,5 +166,188 @@
     "type": "Cây Bóng Mát",
     "plantDate": "2024-03-25",
     "status": "Tốt"
+  },
+
+  {
+    "code": "CT026",
+    "name": "Cây Mít",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-03-28",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT027",
+    "name": "Cây Ổi",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-03-30",
+    "status": "Cần Chăm Sóc"
+  },
+  {
+    "code": "CT028",
+    "name": "Cây Chanh",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-02",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT029",
+    "name": "Cây Cam",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-05",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT030",
+    "name": "Cây Quýt",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-08",
+    "status": "Cần Chăm Sóc"
+  },
+  {
+    "code": "CT031",
+    "name": "Cây Bưởi Da Xanh",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-10",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT032",
+    "name": "Cây Mận",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-12",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT033",
+    "name": "Cây Đào",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-15",
+    "status": "Cần Chăm Sóc"
+  },
+  {
+    "code": "CT034",
+    "name": "Cây Mơ",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-18",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT035",
+    "name": "Cây Lựu",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-20",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT036",
+    "name": "Cây Na",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-22",
+    "status": "Cần Chăm Sóc"
+  },
+  {
+    "code": "CT037",
+    "name": "Cây Dâu",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-25",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT038",
+    "name": "Cây Vải",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-04-28",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT039",
+    "name": "Cây Nhãn",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-05-01",
+    "status": "Cần Chăm Sóc"
+  },
+  {
+    "code": "CT040",
+    "name": "Cây Xoài Cát",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-05-03",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT041",
+    "name": "Cây Mít Tố Nữ",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-05-05",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT042",
+    "name": "Cây Sầu Riêng Ri6",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-05-08",
+    "status": "Cần Chăm Sóc"
+  },
+  {
+    "code": "CT043",
+    "name": "Cây Bơ",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-05-10",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT044",
+    "name": "Cây Mãng Cầu",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-05-12",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT045",
+    "name": "Cây Chôm Chôm",
+    "type": "Cây Ăn Trái",
+    "plantDate": "2024-05-15",
+    "status": "Cần Chăm Sóc"
+  },
+  {
+    "code": "CT046",
+    "name": "Cây Dừa Xiêm",
+    "type": "Cây Bóng Mát",
+    "plantDate": "2024-05-18",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT047",
+    "name": "Cây Cau",
+    "type": "Cây Bóng Mát",
+    "plantDate": "2024-05-20",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT048",
+    "name": "Cây Trúc",
+    "type": "Cây Bóng Mát",
+    "plantDate": "2024-05-22",
+    "status": "Cần Chăm Sóc"
+  },
+  {
+    "code": "CT049",
+    "name": "Cây Tre Trúc",
+    "type": "Cây Bóng Mát",
+    "plantDate": "2024-05-25",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT050",
+    "name": "Cây Tre Lục Bình",
+    "type": "Cây Bóng Mát",
+    "plantDate": "2024-05-28",
+    "status": "Tốt"
+  },
+  {
+    "code": "CT051",
+    "name": "Cây Tre Vàng",
+    "type": "Cây Bóng Mát",
+    "plantDate": "2024-05-30",
+    "status": "Cần Chăm Sóc"
   }
 ]

@@ -9,31 +9,40 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!--Chức năng: Cung cấp các lớp CSS và các thành phần giao diện (như các button, card, table, navbar, v.v.) giúp việc thiết kế trở nên nhanh chóng và dễ dàng.-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <!--Chức năng: Cung cấp các biểu tượng (icon) sẵn có để sử dụng trong giao diện.-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!--link css/styles.css vaf stylesheet vào html để Tùy chỉnh giao diện của trang web.-->
   </head>
   <body>
     <div class="container">
+      <!--container: chứa toàn bộ nội dung của trang web.-->
       <header class="mb-4">
         <h1 class="text-center">Hệ Thống Quản Lý Cây Trồng</h1>
 
         <nav class="nav-buttons">
+          <!--nav-buttons: chứa các button điều hướng giữa các section.-->
           <button class="btn btn-primary" onclick="showSection('overview')">
+            <!--btn btn-primary: tạo button màu xanh, showSection('overview'): khi click vào button sẽ thực hiện hàm showSection('overview')-->
             <i class="bi bi-grid-1x2-fill"></i> Tổng Quan
           </button>
           <button class="btn btn-secondary" onclick="showSection('list')">
+            <!--btn btn-secondary: tạo button màu xám, showSection('list'): khi click vào button sẽ thực hiện hàm showSection('list')-->
             <i class="bi bi-tree-fill"></i> Danh Sách Cây
           </button>
           <button class="btn btn-success" onclick="showSection('add')">
+            <!--btn btn-success: tạo button màu xanh lá cây, showSection('add'): khi click vào button sẽ thực hiện hàm showSection('add')-->
             <i class="bi bi-plus-circle-fill"></i> Thêm Cây Mới
           </button>
           <button
             class="btn btn-info text-white"
             onclick="showSection('report')"
           >
+            <!--btn btn-info: tạo button màu xanh dương, showSection('report'): khi click vào button sẽ thực hiện hàm showSection('report')-->
             <i class="bi bi-file-earmark-text-fill"></i> Báo Cáo
           </button>
         </nav>
@@ -42,9 +51,11 @@
       <main>
         <!-- Overview Section -->
         <section id="overview" class="section active">
+          <!--section active: hiển thị section này đầu tiên khi trang web được load.-->
           <div class="stats-container">
             <div class="stat-card">
               <i class="bi bi-tree-fill icon"></i>
+              <!--number: hiển thị số liệu, 0: giá trị mặc định, khi cập nhật data.json sẽ tahy đổi-->
               <h3>Tổng Số Cây</h3>
               <div class="number" id="totalTrees">0</div>
             </div>
@@ -61,6 +72,7 @@
           </div>
 
           <div class="chart-section">
+            <!--chart-section: chứa các biểu đồ thống kê.-->
             <h3 class="text-center mb-4">Phân Bố Tình Trạng Cây Trồng</h3>
             <div class="chart-container">
               <canvas id="statusChart"></canvas>
@@ -70,7 +82,9 @@
 
         <!-- List Section -->
         <section id="list" class="section">
+          <!--section: chứa danh sách cây trồng.-->
           <div class="search-container">
+            <!--search-container: chứa form tìm kiếm cây trồng.-->
             <div class="row">
               <div class="col-md-6">
                 <input
@@ -81,6 +95,7 @@
                 />
               </div>
               <div class="col-md-4">
+                <!--col-md-4: chia cột thành 4 phần -->
                 <select id="searchType" class="form-select">
                   <option value="code">Mã cây</option>
                   <option value="name">Tên cây</option>
@@ -89,6 +104,7 @@
               </div>
               <div class="col-md-2">
                 <button class="btn btn-primary w-100" onclick="performSearch()">
+                  <!--btn btn-primary: tạo button màu xanh thuộc tính onclick: khi click vào button sẽ thực hiện hàm performSearch()-->
                   <i class="bi bi-search"></i> Tìm kiếm
                 </button>
               </div>
@@ -96,6 +112,7 @@
           </div>
 
           <div class="table-responsive">
+            <!--Tạo ra heading của danh sách hiển thị và định dạng chúng-->
             <table class="table">
               <thead>
                 <tr>
@@ -108,56 +125,86 @@
                 </tr>
               </thead>
               <tbody id="treeList"></tbody>
+              <!--treeList: chứa danh sách cây trồng-->
             </table>
           </div>
         </section>
 
         <!-- Add/Edit Tree Section -->
         <section id="add" class="section">
+          <!--section: chứa form thêm cây mới.-->
           <form id="addTreeForm" class="needs-validation" novalidate>
+            <!--needs-validation: bật chế độ kiểm tra dữ liệu nhập vào, novalidate: không kiểm tra dữ liệu nhập vào-->
             <div class="mb-3">
               <label class="form-label" for="treeCode">Mã Cây:</label>
+              <!--form-label: tạo ra label cho input-->
               <input type="text" class="form-control" id="treeCode" required />
+              <!--form-control: tạo ra input-->
               <div class="invalid-feedback">Vui lòng nhập mã cây</div>
+              <!--invalid-feedback: hiển thị thông báo lỗi-->
             </div>
             <div class="mb-3">
               <label class="form-label" for="treeName">Tên Cây:</label>
+              <!--form-label: tạo ra label cho input-->
               <input type="text" class="form-control" id="treeName" required />
+              <!--form-control: tạo ra input-->
               <div class="invalid-feedback">Vui lòng nhập tên cây</div>
+              <!--invalid-feedback: hiển thị thông báo lỗi-->
             </div>
             <div class="mb-3">
               <label class="form-label" for="treeType">Loại Cây:</label>
+              <!--form-label: tạo ra label cho input-->
               <select class="form-select" id="treeType" required>
+                <!--form-select: tạo ra dropdown list-->
                 <option value="">Chọn loại cây</option>
+                <!--option: tạo ra các lựa chọn trong dropdown list-->
                 <option value="Cây Cảnh">Cây Cảnh</option>
+                <!--value: giá trị của lựa chọn-->
                 <option value="Cây Ăn Trái">Cây Ăn Trái</option>
+                <!--value: giá trị của lựa chọn-->
                 <option value="Cây Bóng Mát">Cây Bóng Mát</option>
+                <!--value: giá trị của lựa chọn-->
               </select>
               <div class="invalid-feedback">Vui lòng chọn loại cây</div>
+              <!--invalid-feedback: hiển thị thông báo lỗi-->
             </div>
             <div class="mb-3">
               <label class="form-label" for="plantDate">Ngày Trồng:</label>
+              <!--form-label: tạo ra label cho input-->
               <input type="date" class="form-control" id="plantDate" required />
+              <!--form-control: tạo ra input, required: bắt buộc nhập-->
               <div class="invalid-feedback">Vui lòng chọn ngày trồng</div>
+              <!--invalid-feedback: hiển thị thông báo lỗi-->
             </div>
             <div class="mb-3">
               <label class="form-label" for="treeStatus">Tình Trạng:</label>
+              <!--form-label: tạo ra label cho input-->
               <select class="form-select" id="treeStatus" required>
+                <!--form-select: tạo ra dropdown list-->
                 <option value="">Chọn tình trạng</option>
+                <!--option: tạo ra các lựa chọn trong dropdown list-->
                 <option value="Tốt">Tốt</option>
+                <!--value: giá trị của lựa chọn-->
                 <option value="Cần Chăm Sóc">Cần Chăm Sóc</option>
+                <!--value: giá trị của lựa chọn-->
               </select>
               <div class="invalid-feedback">Vui lòng chọn tình trạng</div>
+              <!--invalid-feedback: hiển thị thông báo lỗi-->
             </div>
             <div class="d-grid gap-2">
+              <!--d-grid gap-2: tạo ra button với khoảng cách giữa các button là 2-->
               <button type="submit" class="btn btn-primary">
+                <!--btn btn-primary: tạo button màu xanh-->
                 <i class="bi bi-save"></i> Lưu
+                <!--bi bi-save: icon lưu-->
               </button>
               <button
                 type="button"
                 class="btn btn-secondary"
                 onclick="resetForm()"
               >
+                <!--btn btn-secondary: tạo button màu xám thuộc tính onclick: khi click vào button sẽ thực hiện hàm resetForm()-->
+
                 <i class="bi bi-arrow-counterclockwise"></i> Làm mới
               </button>
             </div>
@@ -166,18 +213,29 @@
 
         <!-- Report Section -->
         <section id="report" class="section">
+          <!--section: chứa các báo cáo thống kê.-->
           <div class="chart-section">
+            <!--chart-section: chứa các biểu đồ thống kê.-->
             <div class="row">
+              <!--row: chia cột thành các hàng-->
               <div class="col-md-6 mb-4">
+                <!--col-md-6: chia cột thành 6 phần-->
                 <h3 class="text-center mb-4">Thống kê theo loại cây</h3>
+                <!--text-center: căn giữa-->
                 <div class="chart-container">
+                  <!--chart-container: chứa biểu đồ-->
                   <canvas id="typeChart"></canvas>
+                  <!--canvas: tạo ra một vùng để vẽ biểu đồ-->
                 </div>
               </div>
               <div class="col-md-6 mb-4">
+                <!--col-md-6: chia cột thành 6 phần-->
                 <h3 class="text-center mb-4">Thống kê tình trạng</h3>
+                <!--text-center: căn giữa-->
                 <div class="chart-container">
+                  <!--chart-container: chứa biểu đồ-->
                   <canvas id="statusReportChart"></canvas>
+                  <!--canvas: tạo ra một vùng để vẽ biểu đồ-->
                 </div>
               </div>
             </div>
@@ -185,7 +243,7 @@
         </section>
       </main>
     </div>
-
+    <!--Chức năng: Cung cấp các thư viện và script cần thiết để hoạt động của trang web.-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/config.js"></script>
